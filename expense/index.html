@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker | HerVest</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>💰 Expense Tracker</h2>
+
+        <h3>➕ Add Expense</h3>
+        <input type="text" id="expense-name" placeholder="Expense Name">
+        <input type="number" id="expense-amount" placeholder="Amount">
+
+        <label>Category:</label>
+        <select id="expense-category">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Bills">Bills</option>
+            <option value="Rent">Rent</option>
+            <option value="Health">Health</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Education">Education</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Month:</label>
+        <select id="expense-month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <button onclick="addExpense()">Add Expense</button>
+
+        <h3>📊 Expenses Summary</h3>
+        <label>Select Month:</label>
+        <select id="monthly-select" onchange="updateMonthlyExpense()">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <h4>Monthly Expenses: <span id="monthly-expenses">₹0</span></h4>
+        <h4>Yearly Expenses: <span id="yearly-expenses">₹0</span></h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Month</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="expense.js"></script>
+</body>
+</html>
+
+
+
+

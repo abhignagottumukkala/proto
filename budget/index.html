@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerVest - Budgeting Tools</title>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+    <header>
+        <h1>Budget Planner</h1>
+        <p>Plan your income and track your expenses smartly</p>
+    </header>
+
+    <section class="budget-form">
+        <label for="income">💰 Monthly Income:</label>
+        <input type="number" id="income" placeholder="Enter your income">
+
+        <h3>📌 Add Your Expenses</h3>
+        <div id="expenses-list">
+            <div class="expense-item">
+                <input type="text" class="expense-name" placeholder="Expense name (e.g., Rent)">
+                <input type="number" class="expense-amount" placeholder="Amount">
+            </div>
+        </div>
+
+        <button onclick="addExpense()">➕ Add Expense</button>
+        <button onclick="calculateBudget()">✅ Calculate Savings</button>
+    </section>
+
+    <section class="result">
+        <h2>💸 Total Expenses: <span id="total-expenses">0</span></h2>
+        <h2>💰 Your Savings: <span id="savings">0</span></h2>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </section>
+
+    <script src="budget.js"></script>
+</body>
+</html>

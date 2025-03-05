@@ -1,0 +1,46 @@
+/* Clean Pastel UI for Investment Portfolio */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf6fd;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #6a0572;
+}
+
+input, select, button {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #a4508b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a0572;
+}
+
+canvas {
+    max-width: 100%;
+    margin-top: 20px;
+}

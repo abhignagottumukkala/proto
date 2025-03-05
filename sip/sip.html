@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator | HerVest</title>
+    <link rel="stylesheet" href="sip.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>📈 SIP Calculator</h2>
+        
+        <label>💰 Monthly Investment (₹):</label>
+        <input type="number" id="monthly-investment" placeholder="Enter amount">
+
+        <label>📊 Expected Annual Return Rate (%):</label>
+        <input type="number" id="return-rate" placeholder="Enter return rate">
+
+        <label>⏳ Investment Duration (Years):</label>
+        <input type="number" id="investment-duration" placeholder="Enter years">
+
+        <button onclick="calculateSIP()">Calculate</button>
+
+        <h3>📌 Future Value: <span id="future-value">₹0</span></h3>
+    </div>
+
+    <script src="sip.js"></script>
+</body>
+</html>

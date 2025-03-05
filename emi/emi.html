@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator | HerVest</title>
+    <link rel="stylesheet" href="emi.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>💳 EMI Calculator</h2>
+
+        <label>💰 Loan Amount (₹):</label>
+        <input type="number" id="loan-amount" placeholder="Enter loan amount">
+
+        <label>📊 Interest Rate (% per annum):</label>
+        <input type="number" id="interest-rate" placeholder="Enter interest rate">
+
+        <label>⏳ Loan Tenure (Years):</label>
+        <input type="number" id="loan-tenure" placeholder="Enter tenure in years">
+
+        <button onclick="calculateEMI()">Calculate</button>
+
+        <h3>📌 Monthly EMI: <span id="monthly-emi">₹0</span></h3>
+        <h3>📌 Total Interest Payable: <span id="total-interest">₹0</span></h3>
+
+        <!-- Canvas for Chart -->
+        <canvas id="emiChart"></canvas>
+    </div>
+
+    <script src="emi.js"></script>
+</body>
+</html>
+
