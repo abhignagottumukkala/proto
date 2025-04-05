@@ -14,5 +14,6 @@ HerVest is a user-friendly web application designed to enhance financial literac
 
 To create a financial companion for women that promotes independence, confidence, and clarity in personal finance decisions.
 
-🛠️ Built With
+🛠️ Built With:
+
 HTML, CSS, JavaScript, Canva (Prototype Design)
